@@ -51,5 +51,21 @@ export const styles = StyleSheet.create({
     height:100,
     marginLeft: 24,
     marginRight: 24,
+  },
+  emptyList: {
+    paddingTop: 70,
+    borderTopWidth: 1,
+    borderTopColor: '#808080',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+  },
+  textEmptyListBold: {
+    marginTop: 20,
+    color: '#808080',
+    fontWeight: 'bold',
+  },
+  textEmptyList: {
+    color: '#808080',
   }
 })

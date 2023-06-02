@@ -61,7 +61,7 @@ export function Home() {
       <View style={styles.top}>
         <Image 
         source={require('../../../assets/logo.png')}  
-        style={styles.logo}/>
+        style={styles.logo} />
       </View>
       <View style={styles.form}>
         <TextInput 
@@ -72,7 +72,7 @@ export function Home() {
           value={description} />
         <TouchableOpacity style={styles.button} onPress={handlerAdd}>
           <Text style={styles.buttonText}>
-            <Image source={require('../../../assets/plus.png')}></Image>
+            <Image source={require('../../../assets/plus.png')} />
           </Text>
         </TouchableOpacity>
       </View>
@@ -92,6 +92,17 @@ export function Home() {
               onRemove={() => handlerRemove(item)} />
           }
           showsVerticalScrollIndicator={false}
+          ListEmptyComponent={() => (
+            <View style={styles.emptyList}>
+              <Image source={require('../../../assets/empty-list.png')} />
+              <Text style={styles.textEmptyListBold}>
+                Você ainda não tem tarefas cadastradas
+              </Text>
+              <Text style={styles.textEmptyList}>
+                Crie tarefas e organize seus itens a fazer
+              </Text>
+            </View>
+          )}
           />
         </SafeAreaView>
       </View>
