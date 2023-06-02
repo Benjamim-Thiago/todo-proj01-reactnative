@@ -20,6 +20,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#333333',
     borderRadius: 8,
     marginLeft: 10,
+    fontSize: 12,
     fontWeight: "bold",
     textAlign:"center"
   },
@@ -31,6 +32,7 @@ export const styles = StyleSheet.create({
     width: 25,
     height: 19,
     color: '#D9D9D9',
+    fontSize: 12,
     borderRadius: 8,
     marginLeft: 10,
     backgroundColor: '#333333',
