@@ -21,7 +21,7 @@ export function Home() {
     const newTodo: Todo = {
       id: todos.length + 1,
       description: description,
-      concluded: concluded,
+      concluded: false,
     };
 
     todos.push(newTodo)
